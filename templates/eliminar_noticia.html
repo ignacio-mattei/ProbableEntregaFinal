@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Eliminar Noticia</title>
+{% endblock title %}
+
+{% block texto_header %}
+<h4>
+    Eliminar Noticia
+</h4>
+{% endblock texto_header %}
+
+{% block despues_del_header %}
+<nav class="navbar-light bg-light static-top noticias">
+    <div class="container">
+        <a class="navbar-brand" href={% url 'listado_noticias' %}>Volver</a>
+    </div>
+</nav>
+<p>
+    <form action={% url 'eliminar_noticia' noticia.id %} method="post">
+        {% csrf_token %}
+        ¿Desea eliminar la noticia?
+        <button>Confirmar</button>
+    </form>
+</p>
+{% endblock despues_del_header %}
