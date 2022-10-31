@@ -11,7 +11,9 @@
 3) Ingresar a la carpeta del proyecto
 4) Crear entorno virtual con el comando "python -m venv venv"
 5) Inicializarlo con el comando "source venv/bin/activate"
-6) Descargar requirements con el comando "pip install -r requirements.txt"
+Para Win: venv/scripts/activate.bat
+6) Descargar requirements con el comando "python -m pip install -r requirements.txt"
+*En caso de no tener modulo pip: py -m ensurepip --upgrade
 7) Crear bd y migrar con el siguiente comando "python manage.py migrate"
 8) Iniciar el servidor ejecutando el siguiente comando "python manage.py runserver"
 9) Acceder a la url indicada en consola, ej: http://127.0.0.1:8000/
