@@ -6,16 +6,12 @@
 
 {% block texto_header %}
 <h4>
-    Register
+    Registrar nuevo usuario
 </h4>
 {% endblock texto_header %}
 
 {% block despues_del_header %}
-<nav class="navbar-light bg-light static-top registro-usuario">
-    <div class="container">
-        <a class="navbar-brand" href={% url 'home' %}>Volver</a>
-    </div>
-</nav>
+
 <p>
     <form action={% url 'register' %} method="post">
         {% csrf_token %}
@@ -25,4 +21,14 @@
         <button>Registrarse</button>
     </form>
 </p>
+<!-- <nav class="navbar-light bg-light static-top registro-usuario">
+    <div class="container">
+        <a class="navbar-brand" href={% url 'home' %}>Volver</a>
+    </div>
+</nav> -->
+<h4>
+    <a class="navbar-brand" href={% url 'home' %}>Volver</a>
+</h4>
+
+
 {% endblock despues_del_header %}

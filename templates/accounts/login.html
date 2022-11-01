@@ -11,11 +11,14 @@
 {% endblock texto_header %}
 
 {% block despues_del_header %}
-<nav class="navbar-light bg-light static-top registro-usuario">
+<!-- <nav class="navbar-light bg-light static-top registro-usuario">
     <div class="container">
         <a class="navbar-brand" href={% url 'listado_noticias' %}>Volver</a>
     </div>
-</nav>
+</nav> -->
+
+
+
 <p>
     <form action={% url 'login' %} method="post">
         {% csrf_token %}
@@ -25,4 +28,10 @@
         <button>Loguearse</button>
     </form>
 </p>
+
+
+<h4>
+    <a class="navbar-brand" href={% url 'listado_noticias' %}>Volver</a>
+</h4>
+
 {% endblock despues_del_header %}
