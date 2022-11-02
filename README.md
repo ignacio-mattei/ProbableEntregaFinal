@@ -20,3 +20,6 @@ Para Win: venv/scripts/activate.bat
 #� �P�r�o�b�a�b�l�e�E�n�t�r�e�g�a�F�i�n�a�l�
 �
 �
+
+Partimos de la última entrega de la cursada y trabajamos online para definir el concepto y las herramientas del curso que faltaban aplicar. Ignacio Mattei armó la estructura con los agregados y subió la versión al repositorio. Ignacio Piccoli revisó, agrego cambios menores, generó casos de pruebas y grabó los videos explicación.
+
